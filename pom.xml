@@ -89,12 +89,6 @@
 
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.spark</groupId>
-            <artifactId>spark-sql_${scala.version}</artifactId>
-            <version>${spark.version}</version>
-
-        </dependency>
 
         <dependency>
             <groupId>org.apache.spark</groupId>
@@ -154,6 +148,12 @@
             <artifactId>hbase-client</artifactId>
             <version>${hbase.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.13.3</version>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.hbase</groupId>
@@ -178,20 +178,22 @@
             <artifactId>delta-core_2.12</artifactId>
             <version>0.7.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.hudi/hudi-spark -->
+
         <dependency>
             <groupId>org.apache.hudi</groupId>
             <artifactId>hudi-spark_2.12</artifactId>
             <version>0.6.0</version>
         </dependency>
-
-
-
-        <!-- https://mvnrepository.com/artifact/org.mongodb.spark/mongo-spark-connector -->
         <dependency>
             <groupId>org.mongodb.spark</groupId>
             <artifactId>mongo-spark-connector_2.11</artifactId>
             <version>2.3.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.12</artifactId>
+            <version>3.0.0</version>
         </dependency>
 
     </dependencies>
