@@ -178,6 +178,14 @@
             <artifactId>delta-core_2.12</artifactId>
             <version>0.7.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.hudi/hudi-spark -->
+        <dependency>
+            <groupId>org.apache.hudi</groupId>
+            <artifactId>hudi-spark_2.12</artifactId>
+            <version>0.6.0</version>
+        </dependency>
+
+
 
         <!-- https://mvnrepository.com/artifact/org.mongodb.spark/mongo-spark-connector -->
         <dependency>

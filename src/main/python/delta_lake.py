@@ -1,12 +1,13 @@
 import time
 
 from delta.tables import *
+from pyspark.sql import SparkSession
 
 
 class Delta_lake:
 
     def __init__(self):
-        self.spark = SparkSession.builder.appName("Dalte_test") \
+        self.spark = SparkSession.builder.appName("Delta_crud") \
             .config("spark.jars.packages", "io.delta:delta-core_2.12:0.7.0") \
             .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
             .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
